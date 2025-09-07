@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imTerence::Welcome to my Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h2>imTerence</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a href="#" class="resume-btn glass">Resume</a>
+                </li>
+                -->
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>Hello, I'm Terence</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Data Enthusiast</span>
+                    
+                </h1>
+                <p class="hero-description">
+                    Passionate about technology, fitness, and exploring the world. 
+                    Building innovative solutions while staying active and discovering new cultures. 
+                    <span class="highlight">Always learning</span> and ready for the next adventure.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Countries Visited</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">13+ Years</div>
+                        <div class="stat-label">Experience in SQL/Python</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+ Years</div>
+                        <div class="stat-label">Managing Data Engineers</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-secondary glass">
+                        <i class="fas fa-code"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary glass">
+                        <i class="fas fa-plane"></i>
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-icons-container">
+                    <div class="floating-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="floating-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A few of the projects I have worked on.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="project-badge">Fitness</div>
+                    </div>
+                    <h3>Fitness Workout App</h3>
+                    <p>Developed a comprehensive fitness app with AI-powered workout recommendations and progress tracking for gym enthusiasts.</p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">100+</span>
+                            <span class="metric-label">Customizable Exercises</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">4.8★</span>
+                            <span class="metric-label">App Rating</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://fitness-app-theta-eight.vercel.app/" class="project-link glass" target="_blank">Live Demo</a>
+                        <!--<a href="#" class="project-link glass">Screenshots</a>-->
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+                        <div class="project-badge">Travel</div>
+                    </div>
+                    <h3>IBKR Trading Scanner</h3>
+                    <p>Created a stock scanner that scans the IBKR platform for trading opportunities.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10+</span>
+                            <span class="metric-label">Technical Indicators</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">>50%</span>
+                            <span class="metric-label">Annual Returns</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/imterence/ibkr_scanner" class="project-link glass" target="_blank">Source Code</a>
+                        <a href="#" class="project-link glass" id="screenshotsBtn">Screenshots</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-ranking-star"></i>
+                        </div>
+                        <div class="project-badge">Fitness</div>
+                    </div>
+                    <h3>Hyrox Race Analysis</h3>
+                    <p>Built a race analysis tool that analyzes the data from the Hyrox races, so you know which stations to improve on.</p>
+                    <div class="project-tech">
+                        <span>SQL</span>
+                        <span>Python</span>
+                        
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">2K+</span>
+                            <span class="metric-label">Records</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20+</span>
+                            <span class="metric-label">Races</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link glass">Live Demo</a>
+                        <a href="#" class="project-link glass">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <h3>Senior Systems and Data Team Lead</h3>
+                            
+                        </div>
+                        <h4>Noble Coporations</h4>
+                        <p class="timeline-date">2022 - Present</p>
+                        <ul>
+                            <li>Design and develop systems and data solutions</li>
+                            <li>Managed a team of data engineers</li>
+                            <li>Developed pipelines using SQL and Python during migration between Maersk, Diamond and Noble systems</li>
+                        </ul>
+                        <div class="timeline-achievements">
+                            <span class="achievement">SQL</span>
+                            <span class="achievement">Python</span>
+                            <span class="achievement">Azure AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <h3>Systems and Data Team Lead</h3>
+                            
+                        </div>
+                        <h4>Maersk Drilling</h4>
+                        <p class="timeline-date">2016 - 2022</p>
+                        <ul>
+                            <li>Applied machine learning and data modeling on historical work orders to predict equipment downtime and optimize maintenance schedules</li>
+                            <li>Developed automation tools to optimize and enhance efficiency of work processes</li>
+                            <li>Data analysis, data collection and data wrangling using SQL and Python</li>
+                        </ul>
+                        <div class="timeline-achievements">
+                            <span class="achievement">Machine Learning</span>
+                            <span class="achievement">Data Analysis</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-content glass">
+                        <div class="timeline-header">
+                            <h3>Technical Coordinator</h3>
+                            
+                        </div>
+                        <h4>Maersk Drilling</h4>
+                        <p class="timeline-date">2012 - 2016</p>
+                        <ul>
+                            <li>Optimized the daily maintenance routines by developing a SAP dashboard tool</li>
+                            <li>Automated the entire data extraction process from CMMS and the generation of the team's KPI report using VBA</li>
+                            <li>Developed a macro to automate the update of running hours from Kongsberg's server into SAP for all the newbuilds</li>
+                        </ul>
+                        <div class="timeline-achievements">
+                            <span class="achievement">SAP</span>
+                            <span class="achievement">VBA</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>            
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm passionate about technology, fitness, and exploring new places. Let's discuss how we can build something amazing together, whether you're in Singapore, New York, or anywhere in between.</p>
+                    <div class="contact-stats">
+                        <div class="contact-stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Response within 24h</span>
+                        </div>
+                        <div class="contact-stat">
+                            <i class="fas fa-globe"></i>
+                            <span>Available Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/imterence" class="social-link glass" target="_blank" >
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/imterence/" class="social-link glass" target="_blank" >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/imterence/" class="social-link glass" target="_blank" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/iamterence" class="social-link glass" target="_blank" >
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!--
+                <form class="contact-form glass">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell me about your data challenges..." rows="5" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary glass">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    
+                    <h3>imTerence</h3>
+                    <p>Building the future, one adventure at a time</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Interests</h4>
+                        <ul>
+                            <li>Travel & Adventure</li>
+                            <li>Fitness & Health</li>
+                            <li>Technology Innovation</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Remote Development</li>
+                            <li>Tech Solutions</li>
+                            <li>App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 imTerence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Gallery Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Project Screenshots</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="image-gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-track" id="galleryTrack">
+                            <!-- Images will be dynamically loaded here -->
+                            <div class="gallery-item">
+                                <img src="https://via.placeholder.com/800x600/333333/ffffff?text=Screenshot+1" alt="Screenshot 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://via.placeholder.com/800x600/444444/ffffff?text=Screenshot+2" alt="Screenshot 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://via.placeholder.com/800x600/555555/ffffff?text=Screenshot+3" alt="Screenshot 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://via.placeholder.com/800x600/666666/ffffff?text=Screenshot+4" alt="Screenshot 4">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://via.placeholder.com/800x600/777777/ffffff?text=Screenshot+5" alt="Screenshot 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="nav-btn prev-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn next-btn" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-indicators" id="galleryIndicators">
+                    <!-- Indicators will be dynamically generated -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
