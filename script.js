@@ -519,6 +519,21 @@ class ImageGallery {
         this.currentIndex = 0;
         this.totalItems = this.galleryItems.length;
         
+        // Store different image sets for different galleries
+        this.gallerySets = {
+            ibkr: [
+                { src: "https://i.postimg.cc/T3KgGwRP/Screenshot1.png", alt: "IBKR Screenshot 1" },
+                { src: "https://i.postimg.cc/25vWbKLR/Screenshot2.png", alt: "IBKR Screenshot 2" },
+                { src: "https://i.postimg.cc/J7J1wWVW/Screenshot3.png", alt: "IBKR Screenshot 3" }
+            ],
+            hyrox: [
+                { src: "https://i.postimg.cc/k4FyV7S2/hyrox-training-focus-analysis.png", alt: "Training Focus" },
+                { src: "https://i.postimg.cc/L4DT26R7/hyrox-station-difficulty-progression.png", alt: "Difficulty Progression" },
+                { src: "https://i.postimg.cc/02NCQRyN/hyrox-top3-performance-analysis.png", alt: "Top3 Performance Analysis" },
+                { src: "https://i.postimg.cc/hP31QyX1/hyrox-training-priority-matrix.png", alt: "Training Priority" }
+            ]
+        };
+        
         this.init();
     }
     
@@ -541,11 +556,22 @@ class ImageGallery {
     }
     
     bindEvents() {
-        // Screenshots button click
+        // IBKR Screenshots button click
         const screenshotsBtn = document.getElementById('screenshotsBtn');
         if (screenshotsBtn) {
             screenshotsBtn.addEventListener('click', (e) => {
                 e.preventDefault();
+                this.loadGallerySet('ibkr');
+                this.openModal();
+            });
+        }
+        
+        // Hyrox Screenshots button click
+        const hyroxScreenshotsBtn = document.getElementById('hyroxScreenshotsBtn');
+        if (hyroxScreenshotsBtn) {
+            hyroxScreenshotsBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.loadGallerySet('hyrox');
                 this.openModal();
             });
         }
@@ -698,6 +724,43 @@ class ImageGallery {
         indicators.forEach((indicator, index) => {
             indicator.classList.toggle('active', index === this.currentIndex);
         });
+    }
+    
+    loadGallerySet(setName) {
+        const imageSet = this.gallerySets[setName];
+        if (!imageSet) return;
+        
+        // Clear existing images
+        this.galleryTrack.innerHTML = '';
+        
+        // Add new images with click-to-open functionality
+        imageSet.forEach(imageData => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item';
+            
+            const img = document.createElement('img');
+            img.src = imageData.src;
+            img.alt = imageData.alt;
+            
+            // Add click event to open image in new tab
+            img.addEventListener('click', () => {
+                window.open(imageData.src, '_blank');
+            });
+            
+            // Add cursor pointer style
+            img.style.cursor = 'pointer';
+            
+            galleryItem.appendChild(img);
+            this.galleryTrack.appendChild(galleryItem);
+        });
+        
+        // Update gallery properties
+        this.galleryItems = document.querySelectorAll('.gallery-item');
+        this.totalItems = this.galleryItems.length;
+        this.currentIndex = 0;
+        
+        // Recreate indicators
+        this.createIndicators();
     }
 }
 
